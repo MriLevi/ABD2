@@ -1,6 +1,7 @@
 # ABD2
 
-In deze repo hebben we onze Food collector simulatie geïmplementeerd. \
+Voor de opdracht ABD2 hebben wij een food-collector simulatie gemaakt. In deze simulatie is het doel van de agents om zo veel mogelijk groen eten op te eten, terwijl ze rood eten vermijden. In deze repo hebben we deze simulatie geïmplementeerd.
+
 **Simpele ontologie van de simulatie**:
 <p>
    <div align="center">
@@ -10,7 +11,7 @@ In deze repo hebben we onze Food collector simulatie geïmplementeerd. \
 
 ---
 
-Een uitgebreid verslag en beschrijving van de opdracht vind je op deze drive [document](https://docs.google.com/document/d/1mJd7q5yQweBVidKKJUW1V_L7W-EE9WD7dX5F6ZJ9kC0/edit#heading=h.aw679hz6xq32).\
+Een uitgebreid verslag en beschrijving van de opdracht vind je in dit [document](https://docs.google.com/document/d/1mJd7q5yQweBVidKKJUW1V_L7W-EE9WD7dX5F6ZJ9kC0/edit#heading=h.aw679hz6xq32).
 
 <details open>
 <summary>Install</summary>
