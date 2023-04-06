@@ -85,7 +85,7 @@ class AuctionBatchSimulation():
                                 good_food_locs} for agent_ind in range(len(env.agents))}
                 for i in range(len(env.agents)):
                     for j in range(len(env.agents)):
-                        cost_dict[i][f"exploration{j}"] = random.randint(25, 100) - j - 1
+                        cost_dict[i][f"exploration{j}"] = 100 - j - 1
 
                 target_dict = self.auction(
                     [str(gfl) for gfl in good_food_locs] + [f'exploration{j}' for j in range(len(env.agents))],
