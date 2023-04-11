@@ -1,6 +1,6 @@
-# ABD2
+# Food collector
 
-Voor de opdracht ABD2 hebben wij een food-collector simulatie gemaakt. In deze simulatie is het doel van de agents om zo veel mogelijk groen eten op te eten, terwijl ze rood eten vermijden. In deze repo hebben we deze simulatie geïmplementeerd.
+Voor de opdracht ABD2 hebben wij een food-collector simulatie gemaakt en deze tijdens de opdracht ABD4 uitgebreid met een auction algoritme. In deze simulatie is het doel van de agents om zo veel mogelijk groen eten op te eten, en in zo weinig steps mogelijk, terwijl ze rood eten vermijden. In deze repo hebben we deze simulatie geïmplementeerd.
 
 **Simpele ontologie van de simulatie**:
 <p>
@@ -11,7 +11,7 @@ Voor de opdracht ABD2 hebben wij een food-collector simulatie gemaakt. In deze s
 
 ---
 
-Een uitgebreid verslag en beschrijving van de opdracht vind je in dit [document](https://docs.google.com/document/d/1mJd7q5yQweBVidKKJUW1V_L7W-EE9WD7dX5F6ZJ9kC0/edit#heading=h.aw679hz6xq32).
+Een uitgebreid verslag en beschrijving van de opdracht vind je in dit [document](https://docs.google.com/document/d/1ZvQdAp9ilXUvCj7IddzG7a-08hkhoIeMvVOol7kD6Pg).
 
 <details open>
 <summary>Install</summary>
