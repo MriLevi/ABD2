@@ -9,16 +9,19 @@ import pandas as pd
 import sys
 
 
+# in deze file staan de 3 classes voor batch simulations. Er is er voor gekozen om de aanpassingen hier te doen i.p.v. in
+# de environment class zelf, omdat het hier altijd op dezelfde plek kan: de run loop.
 class AuctionBatchSimulation():
-    def __init__(self, env, runs, random_seeds = None):
+    def __init__(self, env, runs, random_seeds=None):
         self.random_seeds = random_seeds
         self.runs = runs
         self.current_run = 0
         self.df = pd.DataFrame(columns=['points', 'steps_at_termination'])
         self.env = env
 
-
     def auction(self, tasks: list, value_matrix: dict):
+        """"het auction algoritme. Het returned een dict met assignments (collect at coordinate OF explore)
+        """
         env = self.env
 
         # make variables to keep track of agent task pairs and task prices
@@ -68,7 +71,6 @@ class AuctionBatchSimulation():
             print(f"{run}/{self.runs}")
 
             if self.random_seeds:
-
                 env.random_seed = self.random_seeds[run]
 
             env.reset()
@@ -106,8 +108,6 @@ class AuctionBatchSimulation():
             self.update_stats()
             self.current_run += 1
 
-            # print(env.agents[0].clip_vision(observation))
-
     def update_stats(self):
 
         env = self.env
@@ -118,7 +118,7 @@ class AuctionBatchSimulation():
 
 
 class NoAuctionSharedMemoryBatchSimulation():
-    def __init__(self, env, runs, random_seeds = None):
+    def __init__(self, env, runs, random_seeds=None):
         self.random_seeds = random_seeds
         self.runs = runs
         self.current_run = 0
@@ -171,7 +171,7 @@ class NoAuctionSharedMemoryBatchSimulation():
 
 
 class NoAuctionNoSharedMemoryBatchSimulation():
-    def __init__(self, env, runs, random_seeds = None):
+    def __init__(self, env, runs, random_seeds=None):
         self.random_seeds = random_seeds
         self.runs = runs
         self.current_run = 0
